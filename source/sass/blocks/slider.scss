@@ -1,0 +1,14 @@
+.slider {
+  display: grid;
+  grid-template-columns: 294px 1fr;
+  margin-bottom: 163px;
+
+  &__item {
+    list-style-type: none;
+  }
+
+  &__nav {
+    min-height: 100%;
+    border-right: 2px solid #E5E5E5;;
+  }
+}

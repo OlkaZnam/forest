@@ -1,0 +1,35 @@
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  color: $main-color;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    padding: 29px;
+    list-style-type: none;
+
+    &--current {
+      color: $contrast-color;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}

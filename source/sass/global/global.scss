@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1:not([class]):not(:last-child),
+.h1:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+h2:not([class]):not(:last-child),
+.h2:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+p,
+ul,
+img,
+table,
+blockquote {
+  &:not([class]):not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+li:not([class]):not(:last-child) {
+  margin-bottom: 10px;
+}
