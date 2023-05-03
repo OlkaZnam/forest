@@ -1,14 +1,55 @@
 .slider {
   display: grid;
   grid-template-columns: 294px 1fr;
-  margin-bottom: 163px;
+  min-height: 963px;
+
+  &__list {
+    counter-reset: slides;
+  }
 
   &__item {
     list-style-type: none;
+    counter-increment: slides;
+
+    &:after {
+      position: absolute;
+      bottom: 75px;
+      right: 430px;
+      font-family: $main-font;
+      font-weight: 600;
+      font-size: 200px;
+      line-height: 1.2;
+      color: $white-color;
+      text-shadow: -0   -2px 0 #B4977B,
+      0   -2px 0 $contrast-color,
+      -0 2px 0 $contrast-color,
+      0 2px 0 $contrast-color,
+      -2px -0 0 $contrast-color,
+      2px -0 0 $contrast-color,
+      -2px 0 0 $contrast-color,
+      2px 0 0 $contrast-color,
+      -1px -2px 0 $contrast-color,
+      1px -2px 0 $contrast-color,
+      -1px 2px 0 $contrast-color,
+      1px 2px 0 $contrast-color,
+      -2px -1px 0 $contrast-color,
+      2px -1px 0 $contrast-color,
+      -2px 1px 0 $contrast-color,
+      2px 1px 0 $contrast-color,
+      -2px -2px 0 $contrast-color,
+      2px -2px 0 $contrast-color,
+      -2px 2px 0 $contrast-color,
+      2px 2px 0 $contrast-color,
+      -2px -2px 0 $contrast-color,
+      2px -2px 0 $contrast-color,
+      -2px 2px 0 $contrast-color,
+      2px 2px 0 $contrast-color;
+      content: "0" counter(slides);
+    }
   }
 
   &__nav {
-    min-height: 100%;
+    max-height: 1023px;
     border-right: 2px solid #E5E5E5;;
   }
 }

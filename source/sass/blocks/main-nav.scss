@@ -16,7 +16,6 @@
   }
 
   &__item {
-    padding: 29px;
     list-style-type: none;
 
     &--current {
@@ -25,6 +24,7 @@
   }
 
   &__link {
+    padding: 29px;
     text-decoration: none;
     color: inherit;
 

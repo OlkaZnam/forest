@@ -1,34 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/swiper-bundle.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <title>Test</title>
 </head>
-<body class="body">
-<header class="header">
-  <div class="container">
-    <nav class="header__nav main-nav">
-      <ul class="main-nav__list">
-        <li class="main-nav__item main-nav__item--current">
-          <a class="main-nav__link">Home</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="/">Style Hair</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="/">Models</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="/">Shop</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="/">Contact</a>
-        </li>
-      </ul>
+<body class="page__body">
+<header class="page__header header">
+  <nav class="header__nav main-nav">
+    <ul class="main-nav__list">
+      <li class="main-nav__item main-nav__item--current">
+        <a class="main-nav__link">Home</a>
+      </li>
+      <li class="main-nav__item">
+        <a class="main-nav__link" href="/">Style Hair</a>
+      </li>
+      <li class="main-nav__item">
+        <a class="main-nav__link" href="/">Models</a>
+      </li>
+      <li class="main-nav__item">
+        <a class="main-nav__link" href="/">Shop</a>
+      </li>
+      <li class="main-nav__item">
+        <a class="main-nav__link" href="/">Contact</a>
+      </li>
+    </ul>
 
-      <a class="header__button header-button" href="/">
+    <div class="header__button-container">
+      <a class="header-button" href="/">
         <span class="visually-hidden">Cart</span>
         <span class="header-button__counter">1</span>
         <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
@@ -37,20 +38,35 @@
             fill="#050215"/>
         </svg>
       </a>
-    </nav>
-  </div>
+    </div>
+  </nav>
 </header>
 
-<main class="main">
-  <div class="main__slider slider">
+<main class="page__main main">
+  <div class="main__slider slider swiper">
     <div class="slider__nav">
       <h1 class="main__title">Kasmir</h1>
-      <div class="slider__range"></div>
-      <button class="slider__arrow slider__arrow_right" aria-label="next-slide"></button>
+
+      <div class="slider__range range">
+        <div class="range__scale">
+          <div class="range__bar" style="left: 0; width: 42px">
+            <button class="range__toggle toggle-start">
+              <span>01</span>
+              <span class="visually-hidden">Current slide number</span>
+            </button>
+            <button class="range--toggle toggle-end">
+              <span>06</span>
+              <span class="visually-hidden">Total slides number</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+<!--      <button class="slider__arrow slider__arrow_right" aria-label="next-slide"></button>-->
     </div>
 
-    <ul class="slider__list">
-      <li class="slider__item slide">
+    <div class="slider__list swiper-wrapper">
+      <div class="slider__item slide swiper-slide">
         <article class="slide__body">
           <img
             class="slide__image"
@@ -62,77 +78,104 @@
           >
           <div class="slide__description">
             <div class="container">
-            <h2 class="slide__title">
-              Lorem ipsum <br> dolor sit amet!
-            </h2>
+              <h2 class="slide__title">
+                Lorem ipsum <br> dolor sit amet!
+              </h2>
               <p class="slide__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non felis non at tristique. Est ante magna diam
-              magna pharetra. Turpis sagittis consectetur est, integer sed. Sagittis malesuada tellus diam sapien
-              platea.
-            </p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non felis non at tristique. Est ante magna
+                diam
+                magna pharetra. Turpis sagittis consectetur est, integer sed. Sagittis malesuada tellus diam sapien
+                platea.
+              </p>
             </div>
 
             <a class="button slide__button" href="/">Shopping Now</a>
           </div>
 
         </article>
-      </li>
+      </div>
 
-      <!--      <li class="slider__item slide">-->
-      <!--        <article class="slide__body">-->
-      <!--          <img-->
-      <!--            class="slide__image"-->
-      <!--            src="img/slider/image-1.jpg"-->
-      <!--            alt="Brutal man at the barbershop"-->
-      <!--            width="517"-->
-      <!--            height="800"-->
-      <!--            loading="lazy"-->
-      <!--          >-->
-      <!--          <h2 class="slide__title">Lorem ipsum!</h2>-->
-      <!--          <p class="slide__description">-->
-      <!--            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non felis non at tristique. Est ante magna diam-->
-      <!--            magna pharetra. Turpis sagittis consectetur est, integer sed. Sagittis malesuada tellus diam sapien platea.-->
-      <!--            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non felis non at tristique. Est ante magna diam-->
-      <!--            magna pharetra. Turpis sagittis consectetur est, integer sed. Sagittis malesuada tellus diam sapien platea.-->
-      <!--          </p>-->
-      <!--          <a class="button slide__button" href="/">Shopping Now</a>-->
-      <!--        </article>-->
-      <!--      </li>-->
+      <div class="slider__item slide swiper-slide">
+        <article class="slide__body">
+          <img
+            class="slide__image"
+            src="img/slider/image-1.jpg"
+            alt="Brutal man at the barbershop"
+            width="517"
+            height="800"
+            loading="lazy"
+          >
+          <div class="slide__description">
+            <div class="container">
+              <h2 class="slide__title">Lorem ipsum!</h2>
+              <p class="slide__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non felis non at tristique. Est ante magna diam
+                magna pharetra. Turpis sagittis consectetur est, integer sed. Sagittis malesuada tellus diam sapien
+                platea.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non felis non at tristique. Est ante magna diam
+                magna pharetra. Turpis sagittis consectetur est, integer sed. Sagittis malesuada tellus diam sapien
+                platea.
+              </p>
+            </div>
 
-      <!--      <li class="slider__item slide">-->
-      <!--        <article class="slide__body">-->
-      <!--          <img-->
-      <!--            class="slide__image"-->
-      <!--            src="img/slider/image-1.jpg"-->
-      <!--            alt="Brutal man at the barbershop"-->
-      <!--            width="517"-->
-      <!--            height="800"-->
-      <!--            loading="lazy"-->
-      <!--          >-->
-      <!--          <h2 class="slide__title">Lorem ipsum!</h2>-->
-      <!--          <p class="slide__description">-->
-      <!--            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non felis non at tristique. Est ante magna diam-->
-      <!--            magna pharetra. Turpis sagittis consectetur est, integer sed. Sagittis malesuada tellus diam sapien platea.-->
-      <!--            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non felis non at tristique. Est ante magna diam-->
-      <!--            magna pharetra. Turpis sagittis consectetur est, integer sed. Sagittis malesuada tellus diam sapien platea.-->
-      <!--            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non felis non at tristique. Est ante magna diam-->
-      <!--            magna pharetra. Turpis sagittis consectetur est, integer sed. Sagittis malesuada tellus diam sapien platea.-->
-      <!--            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non felis non at tristique. Est ante magna diam-->
-      <!--            magna pharetra. Turpis sagittis consectetur est, integer sed. Sagittis malesuada tellus diam sapien platea.-->
-      <!--            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non felis non at tristique. Est ante magna diam-->
-      <!--            magna pharetra. Turpis sagittis consectetur est, integer sed. Sagittis malesuada tellus diam sapien platea.-->
-      <!--            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non felis non at tristique. Est ante magna diam-->
-      <!--            magna pharetra. Turpis sagittis consectetur est, integer sed. Sagittis malesuada tellus diam sapien platea.-->
-      <!--          </p>-->
+            <a class="button slide__button" href="/">Shopping Now</a>
+          </div>
 
-      <!--          <a class="button slide__button" href="/">Shopping Now</a>-->
-      <!--        </article>-->
-      <!--      </li>-->
-    </ul>
+
+        </article>
+      </div>
+
+      <div class="slider__item slide swiper-slide">
+        <article class="slide__body">
+          <img
+            class="slide__image"
+            src="img/slider/image-1.jpg"
+            alt="Brutal man at the barbershop"
+            width="517"
+            height="800"
+            loading="lazy"
+          >
+
+          <div class="slide__description">
+            <div class="container">
+              <h2 class="slide__title">Lorem ipsum!</h2>
+              <p class="slide__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non felis non at tristique. Est ante magna diam
+                magna pharetra. Turpis sagittis consectetur est, integer sed. Sagittis malesuada tellus diam sapien
+                platea.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non felis non at tristique. Est ante magna diam
+                magna pharetra. Turpis sagittis consectetur est, integer sed. Sagittis malesuada tellus diam sapien
+                platea.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non felis non at tristique. Est ante magna diam
+                magna pharetra. Turpis sagittis consectetur est, integer sed. Sagittis malesuada tellus diam sapien
+                platea.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non felis non at tristique. Est ante magna diam
+                magna pharetra. Turpis sagittis consectetur est, integer sed. Sagittis malesuada tellus diam sapien
+                platea.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non felis non at tristique. Est ante magna diam
+                magna pharetra. Turpis sagittis consectetur est, integer sed. Sagittis malesuada tellus diam sapien
+                platea.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non felis non at tristique. Est ante magna diam
+                magna pharetra. Turpis sagittis consectetur est, integer sed. Sagittis malesuada tellus diam sapien
+                platea.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non felis non at tristique. Est ante magna diam
+                magna pharetra. Turpis sagittis consectetur est, integer sed. Sagittis malesuada tellus diam sapien
+                platea.
+              </p>
+            </div>
+
+            <a class="button slide__button" href="/">Shopping Now</a>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
   </div>
 </main>
 
-<footer class="footer">
+<footer class="page__footer footer">
   <section class="footer__social social">
     <ul class="social__list">
       <li class="social__item">
@@ -147,5 +190,8 @@
     </ul>
   </section>
 </footer>
+
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

@@ -1,5 +1,10 @@
 .social {
-  max-width: 386px;
+  min-width: 386px;
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  color: $main-color;
 
   &__list {
     display: flex;
@@ -10,10 +15,14 @@
 
   &__item {
     list-style-type: none;
+
+    &:hover {
+      opacity: 0.6;
+    }
   }
 
   &__link {
-    color: $main-color;
+    color: inherit;
     text-transform: uppercase;
     text-decoration: none;
   }

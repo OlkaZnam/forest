@@ -1,0 +1,30 @@
+.page {
+  position: relative;
+  max-height: 1080px;
+  scrollbar-width: thin;
+
+  &__body {
+    max-width: 1920px;
+    background: url("../../img/background/main-bg.svg") no-repeat right bottom;
+  }
+
+  &__header {
+    position: absolute;
+    top: 0;
+    right: 120px;
+    z-index: 2;
+  }
+
+  &__main {
+    font-family: $main-font;
+    font-size: 18px;
+    line-height: 1.78;
+  }
+
+  &__footer {
+    position: absolute;
+    bottom: 100px;
+    left: 521px;
+    z-index: 2;
+  }
+}

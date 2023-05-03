@@ -8,4 +8,8 @@
   color: $white-color;
   background-color: $contrast-color;
   border-radius: 50px;
+
+  &:hover {
+    opacity: 0.6;
+  }
 }
