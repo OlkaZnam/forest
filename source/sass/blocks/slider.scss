@@ -2,7 +2,7 @@
 
 .slider {
   display: grid;
-  grid-template-columns: 294px 1fr;
+  grid-template-columns: min-content 1fr;
   min-height: 963px;
 
   &__title {
@@ -12,7 +12,7 @@
 
   &__scrollbar {
     bottom: 380px;
-    left: 144px;
+    left: 50%;
     max-height: 200px;
     background-color: $gray-color;
   }
@@ -20,6 +20,7 @@
   &__pagination {
     .swiper-pagination-current, .swiper-pagination-total{
       position: absolute;
+      left: calc(50% - 24px);
       font-family: $main-font;
       font-weight: 500;
       font-size: 54px;

@@ -16,8 +16,10 @@ const initCategorySlider = () => {
 
     pagination: {
       el: '.swiper-pagination',
-      // type: 'progressbar',
       type: 'fraction',
+      formatFractionCurrent: formatFraction,
+      formatFractionTotal: formatFraction,
+
       renderFraction: function (currentClass, totalClass) {
         return '<span class="' + currentClass + '"></span>' + ' ' + '<span class="' + totalClass + '"></span>';
       }
@@ -30,6 +32,7 @@ const initCategorySlider = () => {
   })
 }
 
+const formatFraction = (number) => number < 10 ? `0${number}` : number
 const initSliders = () => {
   initCategorySlider()
 }
