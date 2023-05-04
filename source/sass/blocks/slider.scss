@@ -1,7 +1,13 @@
+@import "../global/variables.scss";
+
 .slider {
   display: grid;
   grid-template-columns: 294px 1fr;
   min-height: 963px;
+
+  &__title {
+    margin-bottom: 400px;
+  }
 
   &__list {
     counter-reset: slides;
@@ -14,7 +20,7 @@
     &:after {
       position: absolute;
       bottom: 75px;
-      right: 430px;
+      right: 145px;
       font-family: $main-font;
       font-weight: 600;
       font-size: 200px;
@@ -49,7 +55,32 @@
   }
 
   &__nav {
+    position: relative;
     max-height: 1023px;
     border-right: 2px solid #E5E5E5;;
+  }
+
+
+  &__arrow {
+    left: calc(50% - 29px);
+    min-width: 58px;
+    min-height: 79px;
+    border: 2px solid $contrast-color;
+    border-radius: 50px;
+    background: url("../../img/icons/arrow.svg") center no-repeat transparent;
+    cursor: pointer;
+
+    &:hover:not(:active) {
+      opacity: 0.6;
+    }
+
+    &_up {
+      top: 160px;
+      transform: rotate(180deg);
+    }
+
+    &_down {
+      top: 925px;
+    }
   }
 }

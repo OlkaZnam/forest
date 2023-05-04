@@ -1,12 +1,10 @@
+@import "../global/variables.scss";
+
 .page {
   position: relative;
   max-height: 1080px;
-  scrollbar-width: thin;
-
-  &__body {
-    max-width: 1920px;
-    background: url("../../img/background/main-bg.svg") no-repeat right bottom;
-  }
+  background: url("../../img/background/main-bg.svg") no-repeat right bottom;
+  background-size: 100%;
 
   &__header {
     position: absolute;

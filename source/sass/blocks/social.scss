@@ -1,3 +1,5 @@
+@import "../global/variables.scss";
+
 .social {
   min-width: 386px;
   font-family: $main-font;
@@ -22,6 +24,7 @@
   }
 
   &__link {
+    padding: 29px;
     color: inherit;
     text-transform: uppercase;
     text-decoration: none;

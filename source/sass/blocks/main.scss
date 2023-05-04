@@ -1,7 +1,8 @@
+@import "../global/variables.scss";
+
 .main {
   &__title {
     padding: 57px;
-    margin-bottom: 150px;
     font-family: $main-font;
     font-weight: 500;
     font-size: 30px;

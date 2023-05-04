@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/swiper-bundle.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <title>Test</title>
+  <title>Kasmir | Home</title>
 </head>
 <body class="page__body">
 <header class="page__header header">
@@ -45,16 +45,18 @@
 <main class="page__main main">
   <div class="main__slider slider swiper">
     <div class="slider__nav">
-      <h1 class="main__title">Kasmir</h1>
+      <h1 class="main__title slider__title">Kasmir</h1>
+
+      <button class="slider__arrow slider__arrow_up swiper-button-prev" aria-label="prev-slide"></button>
 
       <div class="slider__range range">
         <div class="range__scale">
           <div class="range__bar" style="left: 0; width: 42px">
-            <button class="range__toggle toggle-start">
+            <button class="range__toggle range__toggle_start">
               <span>01</span>
               <span class="visually-hidden">Current slide number</span>
             </button>
-            <button class="range--toggle toggle-end">
+            <button class="range__toggle range__toggle_end">
               <span>06</span>
               <span class="visually-hidden">Total slides number</span>
             </button>
@@ -62,31 +64,39 @@
         </div>
       </div>
 
-<!--      <button class="slider__arrow slider__arrow_right" aria-label="next-slide"></button>-->
+      <button class="slider__arrow slider__arrow_down swiper-button-next" aria-label="next-slide"></button>
     </div>
 
     <div class="slider__list swiper-wrapper">
       <div class="slider__item slide swiper-slide">
         <article class="slide__body">
-          <img
-            class="slide__image"
-            src="img/slider/image-1.jpg"
-            alt="Brutal man at the barbershop"
-            width="517"
-            height="800"
-            loading="lazy"
-          >
+          <figure class="slide__picture slide-picture">
+            <img
+              class="slide-picture__image"
+              src="img/slider/image-1.jpg"
+              alt="Brutal man at the barbershop"
+              width="517"
+              height="800"
+              loading="lazy"
+            >
+            <figcaption class="slide-picture__caption">
+              <p>The Best Hair Style 2021</p>
+            </figcaption>
+          </figure>
+
           <div class="slide__description">
             <div class="container">
               <h2 class="slide__title">
                 Lorem ipsum <br> dolor sit amet!
               </h2>
-              <p class="slide__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non felis non at tristique. Est ante magna
-                diam
-                magna pharetra. Turpis sagittis consectetur est, integer sed. Sagittis malesuada tellus diam sapien
-                platea.
-              </p>
+              <div class="slide__text custom-scrollbar">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non felis non at tristique. Est ante magna
+                  diam
+                  magna pharetra. Turpis sagittis consectetur est, integer sed. Sagittis malesuada tellus diam sapien
+                  platea.
+                </p>
+              </div>
             </div>
 
             <a class="button slide__button" href="/">Shopping Now</a>
@@ -97,25 +107,35 @@
 
       <div class="slider__item slide swiper-slide">
         <article class="slide__body">
-          <img
-            class="slide__image"
-            src="img/slider/image-1.jpg"
-            alt="Brutal man at the barbershop"
-            width="517"
-            height="800"
-            loading="lazy"
-          >
+          <figure class="slide__picture slide-picture">
+            <img
+              class="slide-picture__image"
+              src="img/slider/image-1.jpg"
+              alt="Brutal man at the barbershop"
+              width="517"
+              height="800"
+              loading="lazy"
+            >
+            <figcaption class="slide-picture__caption">
+              <p>The Best Hair Style 2021</p>
+            </figcaption>
+          </figure>
+
           <div class="slide__description">
             <div class="container">
               <h2 class="slide__title">Lorem ipsum!</h2>
-              <p class="slide__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non felis non at tristique. Est ante magna diam
-                magna pharetra. Turpis sagittis consectetur est, integer sed. Sagittis malesuada tellus diam sapien
-                platea.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non felis non at tristique. Est ante magna diam
-                magna pharetra. Turpis sagittis consectetur est, integer sed. Sagittis malesuada tellus diam sapien
-                platea.
-              </p>
+              <div class="slide__text custom-scrollbar">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non felis non at tristique. Est ante magna
+                  diam
+                  magna pharetra. Turpis sagittis consectetur est, integer sed. Sagittis malesuada tellus diam sapien
+                  platea.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non felis non at tristique. Est ante magna
+                  diam
+                  magna pharetra. Turpis sagittis consectetur est, integer sed. Sagittis malesuada tellus diam sapien
+                  platea.
+                </p>
+              </div>
             </div>
 
             <a class="button slide__button" href="/">Shopping Now</a>
@@ -127,41 +147,55 @@
 
       <div class="slider__item slide swiper-slide">
         <article class="slide__body">
-          <img
-            class="slide__image"
-            src="img/slider/image-1.jpg"
-            alt="Brutal man at the barbershop"
-            width="517"
-            height="800"
-            loading="lazy"
-          >
+          <figure class="slide__picture slide-picture">
+            <img
+              class="slide-picture__image"
+              src="img/slider/image-1.jpg"
+              alt="Brutal man at the barbershop"
+              width="517"
+              height="800"
+              loading="lazy"
+            >
+            <figcaption class="slide-picture__caption">
+              <p>The Best Hair Style 2021</p>
+            </figcaption>
+          </figure>
 
           <div class="slide__description">
             <div class="container">
               <h2 class="slide__title">Lorem ipsum!</h2>
-              <p class="slide__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non felis non at tristique. Est ante magna diam
-                magna pharetra. Turpis sagittis consectetur est, integer sed. Sagittis malesuada tellus diam sapien
-                platea.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non felis non at tristique. Est ante magna diam
-                magna pharetra. Turpis sagittis consectetur est, integer sed. Sagittis malesuada tellus diam sapien
-                platea.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non felis non at tristique. Est ante magna diam
-                magna pharetra. Turpis sagittis consectetur est, integer sed. Sagittis malesuada tellus diam sapien
-                platea.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non felis non at tristique. Est ante magna diam
-                magna pharetra. Turpis sagittis consectetur est, integer sed. Sagittis malesuada tellus diam sapien
-                platea.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non felis non at tristique. Est ante magna diam
-                magna pharetra. Turpis sagittis consectetur est, integer sed. Sagittis malesuada tellus diam sapien
-                platea.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non felis non at tristique. Est ante magna diam
-                magna pharetra. Turpis sagittis consectetur est, integer sed. Sagittis malesuada tellus diam sapien
-                platea.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non felis non at tristique. Est ante magna diam
-                magna pharetra. Turpis sagittis consectetur est, integer sed. Sagittis malesuada tellus diam sapien
-                platea.
-              </p>
+              <div class="slide__text custom-scrollbar">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non felis non at tristique. Est ante magna
+                  diam
+                  magna pharetra. Turpis sagittis consectetur est, integer sed. Sagittis malesuada tellus diam sapien
+                  platea.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non felis non at tristique. Est ante magna
+                  diam
+                  magna pharetra. Turpis sagittis consectetur est, integer sed. Sagittis malesuada tellus diam sapien
+                  platea.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non felis non at tristique. Est ante magna
+                  diam
+                  magna pharetra. Turpis sagittis consectetur est, integer sed. Sagittis malesuada tellus diam sapien
+                  platea.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non felis non at tristique. Est ante magna
+                  diam
+                  magna pharetra. Turpis sagittis consectetur est, integer sed. Sagittis malesuada tellus diam sapien
+                  platea.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non felis non at tristique. Est ante magna
+                  diam
+                  magna pharetra. Turpis sagittis consectetur est, integer sed. Sagittis malesuada tellus diam sapien
+                  platea.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non felis non at tristique. Est ante magna
+                  diam
+                  magna pharetra. Turpis sagittis consectetur est, integer sed. Sagittis malesuada tellus diam sapien
+                  platea.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non felis non at tristique. Est ante magna
+                  diam
+                  magna pharetra. Turpis sagittis consectetur est, integer sed. Sagittis malesuada tellus diam sapien
+                  platea.
+                </p>
+              </div>
             </div>
 
             <a class="button slide__button" href="/">Shopping Now</a>
@@ -169,9 +203,6 @@
         </article>
       </div>
     </div>
-
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
   </div>
 </main>
 
@@ -179,13 +210,13 @@
   <section class="footer__social social">
     <ul class="social__list">
       <li class="social__item">
-        <a class="social__link" href="https://facebook.com/">Facebook</a>
+        <a class="social__link" href="https://facebook.com/" target="_blank">Facebook</a>
       </li>
       <li class="social__item">
-        <a class="social__link" href="https://instagram.com/">Instagram</a>
+        <a class="social__link" href="https://instagram.com/" target="_blank">Instagram</a>
       </li>
       <li class="social__item">
-        <a class="social__link" href="https://twitter.com/">Twitter</a>
+        <a class="social__link" href="https://twitter.com/" target="_blank">Twitter</a>
       </li>
     </ul>
   </section>

@@ -1,0 +1,23 @@
+@import "./variables.scss";
+
+@mixin custom-scrollbar($scrollBackgroundColor: $gray-color, $thumbColor: $contrast-color, $thumbBorderRadius: 2px) {
+  scrollbar-color: $thumbColor $scrollBackgroundColor;
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    --size: 4px;
+
+    width: var(--size);
+    background-color: $scrollBackgroundColor;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $thumbColor;
+    background-clip: content-box;
+  }
+
+  &::-webkit-scrollbar-track,
+  &::-webkit-scrollbar-thumb {
+    border-radius: $thumbBorderRadius;
+  }
+}

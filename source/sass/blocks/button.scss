@@ -1,5 +1,11 @@
+@import "../global/variables.scss";
+
 .button {
-  padding: 14px 32px;
+  min-width: 178px;
+  min-height: 60px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   font-family: $main-font;
   font-weight: 500;
   font-size: 18px;
