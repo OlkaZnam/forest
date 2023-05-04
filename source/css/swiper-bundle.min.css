@@ -18,7 +18,7 @@
 }
 
 :root {
-    --swiper-theme-color: #007aff
+    --swiper-theme-color: #AF7842
 }
 
 .swiper, swiper-container {
@@ -467,15 +467,15 @@ button.swiper-pagination-bullet {
 .swiper-horizontal > .swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal, .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite, .swiper-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
     width: 100%;
     height: var(--swiper-pagination-progressbar-size, 4px);
-    left: 0;
-    top: 0
+    /*left: 0;*/
+    /*top: 0*/
 }
 
 .swiper-horizontal > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite, .swiper-pagination-progressbar.swiper-pagination-horizontal.swiper-pagination-progressbar-opposite, .swiper-pagination-progressbar.swiper-pagination-vertical, .swiper-vertical > .swiper-pagination-progressbar {
     width: var(--swiper-pagination-progressbar-size, 4px);
     height: 100%;
-    left: 0;
-    top: 0
+    /*left: 0;*/
+    /*top: 0*/
 }
 
 .swiper-pagination-lock {
@@ -505,9 +505,9 @@ button.swiper-pagination-bullet {
 
 .swiper-scrollbar.swiper-scrollbar-vertical, .swiper-vertical > .swiper-scrollbar {
     position: absolute;
-    left: var(--swiper-scrollbar-left, auto);
-    right: var(--swiper-scrollbar-right, 4px);
-    top: var(--swiper-scrollbar-sides-offset, 1%);
+    /*left: var(--swiper-scrollbar-left, auto);*/
+    /*right: var(--swiper-scrollbar-right, 4px);*/
+    /*top: var(--swiper-scrollbar-sides-offset, 1%);*/
     z-index: 50;
     width: var(--swiper-scrollbar-size, 4px);
     height: calc(100% - 2 * var(--swiper-scrollbar-sides-offset, 1%))
@@ -517,7 +517,7 @@ button.swiper-pagination-bullet {
     height: 100%;
     width: 100%;
     position: relative;
-    background: var(--swiper-scrollbar-drag-bg-color, rgba(0, 0, 0, .5));
+    background: #B4977B;
     border-radius: var(--swiper-scrollbar-border-radius, 10px);
     left: 0;
     top: 0

@@ -9,6 +9,33 @@
     margin-bottom: 400px;
   }
 
+
+  &__scrollbar {
+    bottom: 380px;
+    left: 144px;
+    max-height: 200px;
+    background-color: $gray-color;
+  }
+
+  &__pagination {
+    .swiper-pagination-current, .swiper-pagination-total{
+      position: absolute;
+      font-family: $main-font;
+      font-weight: 500;
+      font-size: 54px;
+      line-height: 1.2;
+      color: $contrast-color;
+    }
+
+    .swiper-pagination-current {
+      bottom: 600px;
+    }
+
+    .swiper-pagination-total {
+      bottom: 300px;
+    }
+  }
+
   &__list {
     counter-reset: slides;
   }

@@ -1,15 +1,8 @@
 const initCategorySlider = () => {
   const swiper = new Swiper('.swiper', {
-    // Optional parameters
     direction: 'vertical',
     // loop: true,
 
-    // If we need pagination
-    // pagination: {
-    //     el: '.swiper-pagination',
-    // },
-
-    // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
@@ -19,7 +12,21 @@ const initCategorySlider = () => {
       enabled: true,
       onlyInViewport: true,
       pageUpDown: true,
-    }
+    },
+
+    pagination: {
+      el: '.swiper-pagination',
+      // type: 'progressbar',
+      type: 'fraction',
+      renderFraction: function (currentClass, totalClass) {
+        return '<span class="' + currentClass + '"></span>' + ' ' + '<span class="' + totalClass + '"></span>';
+      }
+    },
+
+    scrollbar: {
+      el: '.swiper-scrollbar',
+      draggable: true,
+    },
   })
 }
 
