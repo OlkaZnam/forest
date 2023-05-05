@@ -1,6 +1,5 @@
 const initCategorySlider = () => {
   const swiper = new Swiper('.swiper', {
-    direction: 'vertical',
     // loop: true,
 
     navigation: {
@@ -29,6 +28,14 @@ const initCategorySlider = () => {
       el: '.swiper-scrollbar',
       draggable: true,
     },
+    breakpoints: {
+      1000: {
+        direction: 'vertical',
+      },
+      0: {
+        // direction: 'horzontal',
+      }
+    }
   })
 }
 

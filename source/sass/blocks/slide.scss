@@ -3,19 +3,16 @@
 .slide {
   &__body {
     display: grid;
-    grid-template-columns: 164px 517px 1fr;
-  }
-
-  &__picture {
-    grid-column: 2 / 3;
+    grid-template-columns: var(--slide-image-width) 1fr;
+    padding-left: var(--slide-padding-left);
+    align-items: flex-start;
   }
 
   &__description {
-    grid-column: 3 / -1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 131px 133px;
+    padding: 246px var(--slide-description-padding-x);
     color: $main-color-transparent;
   }
 

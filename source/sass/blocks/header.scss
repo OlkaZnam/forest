@@ -1,7 +1,7 @@
 .header {
-  padding-top: 35px;
-  //background: rgba(255, 255, 255, .8);
-  //backdrop-filter: blur(10px);
+  @media (min-width: 1701px) {
+    padding-top: 35px;
+  }
 
   &__button-container {
     margin-left: 50px;

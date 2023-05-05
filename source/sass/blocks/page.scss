@@ -1,19 +1,28 @@
 @import "../global/variables.scss";
 
 .page {
-  position: relative;
-  max-height: 1080px;
   background: url("../../img/background/main-bg.svg") no-repeat right bottom;
-  background-size: 100%;
+  overflow: hidden;
+
+  &,
+  &__body {
+    height: 100vh;
+  }
 
   &__header {
-    position: absolute;
+    position: fixed;
     top: 0;
-    right: 135px;
+    left: calc(
+      var(--nav-width) +
+      var(--slide-padding-left) +
+      var(--slide-image-width) +
+      var(--slide-description-padding-x)
+    );
     z-index: 2;
   }
 
   &__main {
+    height: inherit;
     font-family: $main-font;
     font-size: 18px;
     line-height: 1.78;
@@ -22,7 +31,7 @@
   &__footer {
     position: absolute;
     bottom: 100px;
-    left: 420px;
+    left: calc(var(--nav-width) + var(--slide-padding-left));
     z-index: 2;
   }
 }

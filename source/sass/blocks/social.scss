@@ -7,12 +7,14 @@
   font-size: 14px;
   line-height: 1.2;
   color: $main-color;
+  padding-left: 3.28vw;
 
   &__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    column-gap: 58px;
   }
 
   &__item {
@@ -24,7 +26,8 @@
   }
 
   &__link {
-    padding: 29px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     color: inherit;
     text-transform: uppercase;
     text-decoration: none;

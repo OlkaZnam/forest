@@ -30,6 +30,10 @@ li:not([class]):not(:last-child) {
   margin-bottom: 10px;
 }
 
+a {
+  display: inline-flex;
+}
+
 .custom-scrollbar {
   @include custom-scrollbar();
 }

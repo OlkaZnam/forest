@@ -1,8 +1,11 @@
 @import "../global/variables.scss";
 
 .main {
+  &__slider {
+    height: inherit;
+  }
+
   &__title {
-    padding: 57px 5.21vw;
     font-family: $main-font;
     font-weight: 500;
     font-size: 30px;

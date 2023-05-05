@@ -1,39 +1,42 @@
 @import "../global/variables.scss";
 
+.swiper-scrollbar.swiper-scrollbar-vertical, .swiper-vertical > .swiper-scrollbar {
+  position: relative;
+  height: 200px;
+}
+
+.swiper-pagination {
+  position: initial;
+}
+
 .slider {
   display: grid;
-  grid-template-columns: min-content 1fr;
-  min-height: 963px;
-
-  &__title {
-    margin-bottom: 400px;
-  }
-
+  grid-template-columns: var(--nav-width) 1fr;
 
   &__scrollbar {
-    bottom: 380px;
-    left: 50%;
-    max-height: 200px;
     background-color: $gray-color;
   }
 
   &__pagination {
-    .swiper-pagination-current, .swiper-pagination-total{
+    display: contents;
+
+    .swiper-pagination-current, .swiper-pagination-total {
       position: absolute;
-      left: calc(50% - 24px);
+      left: 50%;
       font-family: $main-font;
       font-weight: 500;
       font-size: 54px;
       line-height: 1.2;
       color: $contrast-color;
+      transform: translateX(-50%);
     }
 
     .swiper-pagination-current {
-      bottom: 600px;
+      bottom: calc(100% + 15px);
     }
 
     .swiper-pagination-total {
-      bottom: 300px;
+      top: calc(100% + 15px);
     }
   }
 
@@ -83,14 +86,21 @@
   }
 
   &__nav {
-    position: relative;
-    max-height: 1023px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 57px;
+    padding-bottom: 100px;
     border-right: 2px solid #E5E5E5;;
   }
 
+  &__extra-controls {
+    position: relative;
+  }
 
   &__arrow {
-    left: calc(50% - 29px);
+    position: static;
     min-width: 58px;
     min-height: 79px;
     border: 2px solid $contrast-color;
@@ -103,12 +113,7 @@
     }
 
     &_up {
-      top: 160px;
       transform: rotate(180deg);
-    }
-
-    &_down {
-      top: 925px;
     }
   }
 }

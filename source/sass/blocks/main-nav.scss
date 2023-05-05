@@ -14,7 +14,11 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    column-gap: 58px;
+
+    @media (max-width: 1700px) {
+      column-gap: 30px;
+    }
   }
 
   &__item {
@@ -26,7 +30,8 @@
   }
 
   &__link {
-    padding: 29px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     text-decoration: none;
     color: inherit;
 
